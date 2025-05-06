@@ -1,0 +1,275 @@
+/* General Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo img {
+  object-fit: contain;
+}
+
+.nav-logo p {
+  color: #171717;
+
+  font-weight: 600;
+}
+.nav-menu {
+  list-style: none;
+}
+.nav-menu li {
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+.nav-link {
+  text-decoration: none;
+  color: #626262;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.login-button {
+  outline: none;
+  border: 1px solid #7a7a7a;
+  border-radius: 25px;
+  color: #515151;
+
+  font-weight: 500;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.login-button:hover {
+  background: #ff4141;
+  color: #fff;
+  border: none;
+  box-shadow: 0 1px 3px -2px rgba(0, 0, 0, 0.1);
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-icon img {
+  cursor: pointer;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff4141;
+  color: #fff;
+
+  font-weight: 600;
+  border-radius: 50%;
+}
+
+/* Hamburger Menu*/
+.burger-menu {
+  display: none;
+  position: absolute;
+  left: 16px;
+  top: 25px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.burger-icon {
+  width: 25px;
+  height: 2px;
+  background-color: #333;
+  border-radius: 2px;
+  margin: 4px 0px;
+  transition: all 0.3s ease;
+}
+
+.burger-menu.active .burger-icon:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+  width: 18px;
+}
+
+.burger-menu.active .burger-icon:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.active .burger-icon:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+  width: 18px;
+}
+
+/* Navigation Menu that Slides In from the Left */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-menu.open {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 80px;
+  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.2);
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-menu li {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.nav-menu li:hover {
+  border-bottom: 3px solid #ff4141;
+}
+
+@media screen and (min-width: 480px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-logo {
+    margin-left: 25px;
+  }
+  .nav-logo img {
+    height: 39px;
+  }
+  .nav-logo p {
+    font-size: 18px;
+  }
+
+  .login-button {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .cart-icon img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .cart-count {
+    width: 13px;
+    height: 13px;
+    font-size: 10px;
+  }
+
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-logo {
+    margin-left: 0px;
+  }
+  .nav-logo img {
+    height: 39px;
+  }
+  .nav-logo p {
+    font-size: 18px;
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+  }
+
+  .nav-menu li {
+    font-size: 16px;
+  }
+  .login-button {
+    width: 110px;
+    height: 42px;
+    font-size: 15px;
+  }
+
+  .cart-icon img {
+    width: 27px;
+    height: 27px;
+  }
+
+  .cart-count {
+    width: 14px;
+    height: 14px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-logo {
+    gap: 10px;
+  }
+
+  .nav-logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-logo p {
+    font-size: 24px;
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 40px;
+    margin-top: 10px;
+  }
+
+  .nav-menu li {
+    font-size: 20px;
+  }
+  .login-button {
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+  }
+  .cart-icon img {
+    width: 30px;
+    height: 30px;
+  }
+  .cart-count {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+}

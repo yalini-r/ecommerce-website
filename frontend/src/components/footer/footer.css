@@ -1,0 +1,172 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: #f8f8f8;
+    padding: 20px 0;
+  }
+  
+  .ft-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .ft-logo img {
+    height: 80px;
+  }
+  
+  .ft-logo p {
+    color: #383838;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  .ft-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color: #252525;
+    font-size: 18px;
+  }
+  
+.lnk{
+    text-decoration: none;
+    color: #252525;
+    cursor: pointer;
+   
+  }
+.ft-links .lnk:hover {
+    color: #ff6f61; 
+   
+  }
+  
+.ft-social-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+.ft-icons-container {
+    padding: 10px;
+    padding-bottom: 6px;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+  }
+  
+  .ft-icons-container img {
+    height: 25px;
+    transition: transform 0.3s ease;
+  }
+  
+  .ft-icons-container img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  
+  .ft-copyrgt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    font-size: 16px;
+  }
+  
+  .ft-copyrgt hr {
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 2px;
+    background: #c7c7c7;
+  }
+  
+  @media screen and (min-width: 480px) {
+    .ft-logo {
+      gap: 20px;
+    }
+  
+    .ft-logo img {
+      height: 70px;
+    }
+  
+    .ft-logo p {
+      font-size: 20px;
+    }
+  
+    .ft-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      font-size: 18px;
+    }
+  
+    .ft-social-icons {
+      gap: 30px;
+    }
+  
+    .ft-icons-container img {
+      height: 22px;
+    }
+  
+    .ft-copyrgt {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .ft-logo {
+      gap: 25px;
+    }
+  
+    .ft-logo img {
+      height: 80px;
+    }
+  
+    .ft-logo p {
+      font-size: 25px;
+    }
+  
+    .ft-links {
+      flex-direction: row;
+      gap: 100px;
+      font-size: 18px;
+    }
+  
+    .ft-social-icons {
+      gap: 40px;
+    }
+  
+    .ft-icons-container img {
+      height: 30px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .footer {
+      gap: 70px;
+    }
+  
+    .ft-logo {
+      gap: 30px;
+    }
+  
+    .ft-logo p {
+      font-size: 30px;
+    }
+  
+    .ft-links {
+      gap: 120px;
+      font-size: 20px;
+    }
+  
+    .ft-social-icons {
+      gap: 50px;
+    }
+  }
+  

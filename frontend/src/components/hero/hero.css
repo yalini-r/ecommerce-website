@@ -1,0 +1,189 @@
+/* Hero Section */
+.hero {
+  background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+  justify-content:space-evenly;
+  align-items: center;
+  padding: 50px 0px;
+ 
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+  line-height: 1.1;
+  margin-top: -60px;
+}
+
+.left h2 {
+  color: #090909;
+ 
+  font-weight: 600;
+  letter-spacing: 3px;
+ 
+}
+
+.left p {
+  color: #171717;
+ 
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing:2px;
+ 
+}
+
+.hero-hand-icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
+.hero-latest-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  height: 55px;
+  border-radius: 75px;
+  margin-top: 20px;
+  background: #ff4141;
+  color: white;
+
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.right img {
+
+  object-fit: contain;
+}
+
+
+
+@media screen and (min-width: 480px) {
+  .hero{
+    gap: 30px;
+  }
+   .left{
+    padding-top: 100px;
+   }
+  .left h2{
+   
+    font-size: 27px;
+  }
+  .left p {
+    font-size: 35px;
+  }
+
+  .hero-hand-icon img {
+    width: 50px;
+  }
+
+  .hero-latest-btn {
+    width: 200px;
+    font-size: 16px;
+   
+  }
+
+  .hero-latest-btn img{
+    width: 15px;
+  }
+
+  .right img{
+    height: 60vh;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  
+  
+}
+
+@media screen and (min-width:768px){
+  .hero{
+   gap: 50px;
+  }
+  .left{
+   
+    padding-left:70px;
+   }
+ .left h2{
+   
+    font-size: 30px;
+  }
+  .left p {
+    font-size: 45px;
+  }
+
+  .hero-hand-icon img {
+    width: 60px;
+  }
+
+  .hero-latest-btn {
+    width: 220px;
+    font-size: 18px;
+   
+  }
+
+  .hero-latest-btn img{
+    width: 16px;
+  }
+
+  .right img{
+    height: 70vh;
+   
+  }
+
+}
+
+@media screen and (min-width:1024px){
+  .hero{
+    gap: 100px;
+   }
+   .left{
+     padding-top: 30px;
+     padding-left:80px;
+    }
+  .left h2{
+   
+    font-size: 35px;
+  }
+  .left p {
+    font-size: 55px;
+  }
+
+  .hero-hand-icon img {
+    width: 70px;
+  }
+
+  .hero-latest-btn {
+    width: 250px;
+    font-size: 20px;
+   
+  }
+
+  .hero-latest-btn img{
+    width: 17px;
+  }
+
+  .right img{
+    height: 90vh;
+   
+  }
+}

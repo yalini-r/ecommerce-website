@@ -1,0 +1,152 @@
+.news-ltr{
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 100px auto;
+   background: linear-gradient(180deg , #fde1ff 0%, #e1ffea22 60%);
+   
+}
+
+.news-ltr h1{
+    color: #454545;
+    font-weight: 600;
+}
+
+.news-ltr p{
+    color: #454545;
+    font-size: 20px;
+}
+
+.news-ltr .inp-btn{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    border-radius: 80px;
+    border: 2px solid #e3e3e3;
+}
+
+.news-ltr input{
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    color:#616161;
+    font-family:Poppins;
+    border-top-left-radius: 80px ;
+    border-bottom-left-radius: 80px ;
+}
+
+.news-ltr div  button{
+     border-top-right-radius: 80px ;
+     border-bottom-right-radius: 80px ;
+     background:black ;
+     color:white;
+     cursor: pointer;
+}
+
+
+
+
+@media screen and (min-width:480px){
+    .news-ltr{
+     gap: 35px;
+    }
+    .news-ltr h1{
+        margin-top: 80px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .news-ltr p{
+        color: #454545;
+        font-size: 12px;
+    }
+
+    .news-ltr .inp-btn{
+        width: 280px;
+        height: 40px;
+       
+    }
+
+    .news-ltr input{
+       font-size: 12px;
+        
+    }
+    
+    .news-ltr div  button{
+         width: 100px;
+         font-size: 12px;
+         padding: 0px 10px;
+    }
+
+}
+
+@media screen and (min-width:768px){
+    .news-ltr{
+        gap: 40px;
+      
+    }
+    .news-ltr h1{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    .news-ltr p{
+        color: #454545;
+        font-size:18px;
+    }
+
+    .news-ltr .inp-btn{
+        width: 320px;
+        height: 45px;
+       
+    }
+
+    .news-ltr input{
+       font-size: 16px;
+        
+    }
+    
+    .news-ltr div  button{
+         width: 100px;
+         font-size: 12px;
+        
+    }
+  
+}
+
+
+@media screen and (min-width:1024px){
+    .news-ltr{
+        gap: 50px;
+       
+    }
+    .news-ltr h1{
+        margin-top: 100px;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    
+    .news-ltr p{
+        font-size: 20px;
+    }
+
+    .news-ltr .inp-btn{
+        width: 350px;
+        height: 50px;
+       
+    }
+    
+    .news-ltr input{
+        font-size: 16px;
+       
+    }
+    
+    .news-ltr div  button{
+         width: 120px;
+         font-size: 16px;
+        
+    }
+   
+}

@@ -1,0 +1,245 @@
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fce3fe;
+  height: 100vh;
+  
+}
+
+.sg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sg-container h1 {
+  margin: 0 0 30px 0;
+  font-weight: 600;
+  color: #333;
+}
+
+.sg-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ 
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.input-field label {
+ font-weight: 500;
+  color: #5c5c5c;
+  margin-bottom: 5px;
+}
+
+.sg-fields input {
+  border: 1px solid #c9c9c9;
+  outline: none;
+  color: #5c5c5c;
+  border-radius: 4px;
+}
+
+.sg-fields input:focus {
+  border-color: #ff4141;
+}
+
+.sg-container button {
+  background: #ff4141;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 20px;
+ 
+}
+
+.sg-container button:hover {
+  background: #e03a3a;
+}
+
+.login {
+  margin-top: 20px;
+  color: #5c5c5c;
+ 
+}
+
+.login span {
+  color: #ff4141;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.agree {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+  gap: 10px;
+  color: #5c5c5c;
+  font-size: 16px;
+}
+.agree label {
+  color: #5c5c5c;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 480px) {
+ 
+
+  .sg-container {
+    max-width: 390px;
+    padding: 30px;
+  }
+
+  .sg-container h1 {
+    font-size: 25px;
+  }
+
+  .sg-fields {
+    width: 95%;
+  }
+
+  .input-field {
+    width: 95%;
+  }
+
+  .input-field label {
+    font-size: 14px;
+  }
+
+  .sg-fields input {
+    height: 40px;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+  .sg-container button {
+    height: 40px;
+    font-size: 16px;
+    width: 95%;
+  }
+
+  .login {
+    font-size: 14px;
+  }
+
+  .agree input {
+    width: 20px;
+    height: 15px;
+  }
+
+  .agree label {
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (min-width:768px){
+
+  .sg-container {
+    max-width: 400px;
+    padding: 35px;
+  }
+
+  .sg-container h1 {
+    font-size: 28px;
+  }
+
+  .sg-fields {
+    width:98%;
+  }
+
+  .input-field {
+    width: 96%;
+  }
+
+  .input-field label {
+    font-size: 15px;
+  }
+
+  .sg-fields input {
+    height: 45px;
+    padding: 0 15px;
+    font-size: 13px;
+  }
+
+  .sg-container button {
+    height: 45px;
+    font-size: 17px;
+    width: 96%;
+  }
+
+  .login {
+    font-size: 15px;
+  }
+
+  .agree input {
+    width: 20px;
+    height: 18px;
+  }
+
+  .agree label {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width:1024px){
+ 
+
+  .sg-container {
+    max-width: 420px;
+    padding: 40px;
+  }
+
+  .sg-container h1 {
+    font-size: 32px;
+  }
+
+  .sg-fields {
+    width:100%;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+
+  .input-field label {
+    font-size: 16px;
+  }
+
+  .sg-fields input {
+    height: 50px;
+    padding: 0 15px;
+    font-size: 15px;
+  }
+
+  .sg-container button {
+    height: 50px;
+    font-size: 18px;
+     width: 100%;
+  }
+
+  .login {
+    font-size: 16px;
+  }
+
+  .agree input {
+    width: 20px;
+    height: 20px;
+  }
+
+  .agree label {
+    font-size: 16px;
+  }
+}

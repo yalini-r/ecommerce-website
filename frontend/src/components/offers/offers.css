@@ -1,0 +1,117 @@
+.offer {
+    width: 80%; 
+    height:60vh; 
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px;
+    margin-top: 130px;
+    margin-bottom: 130px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    margin: 50px 0px 0px 40px;
+  }
+  
+  .lft h2 {
+    color: #171717;
+    font-size: 30px; 
+    font-weight: 600;
+  }
+  
+  .lft h1 {
+    color: #171717;
+    font-size: 50px; 
+    font-weight: 600;
+    margin: 10px 0; 
+  }
+  
+  .lft p {
+    margin-top: 20px;
+    color: #171717;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .lft button {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background: #ff4141;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .lft button:hover {
+    background: #ff2a2a; 
+  }
+  
+  .rgt {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom:110px;
+  }
+  
+  @media (max-width: 768px) {
+    .offer{
+     flex-direction: column;
+     height: 100vh;
+    }
+   
+    .lft{
+        margin: 17px 0px 0px 20px;
+    }
+   
+    .lft h2 {
+        font-size:20px; 
+    }
+  
+    .lft h1 {
+      font-size: 20px;
+    }
+  
+    .lft p {
+      margin-top: 10px; 
+      font-size: 12px;
+    }
+  
+    .lft button {
+      width: 100px;
+      height: 40px;
+      font-size: 12px;
+      margin-top: 15px;
+    }
+  
+ }
+
+  @media (min-width: 768px)
+  {
+    
+  .lft h2 {
+      font-size:30px; 
+  }
+  .lft h1 {
+    font-size: 25px;
+  }
+  .lft p {
+    margin-top: 10px; 
+    font-size: 14px;
+  }
+  }
+ 
+  
