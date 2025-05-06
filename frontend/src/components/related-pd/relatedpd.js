@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const RelatedProducts = ({ category }) => {
   const { all_product } = useContext(ShopContext);
-
+  const [showAll, setShowAll] = useState(false);
   const navigate = useNavigate();
 
   // Filter products based on the category
