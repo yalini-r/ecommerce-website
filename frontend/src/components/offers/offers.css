@@ -67,7 +67,7 @@
     padding-bottom:110px;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
     .offer{
      flex-direction: column;
      height: 100vh;
@@ -78,40 +78,63 @@
     }
    
     .lft h2 {
-        font-size:20px; 
+        font-size:18px; 
     }
   
     .lft h1 {
-      font-size: 20px;
+      font-size: 16px;
     }
   
     .lft p {
       margin-top: 10px; 
-      font-size: 12px;
+      font-size: 10px;
     }
   
     .lft button {
-      width: 100px;
-      height: 40px;
-      font-size: 12px;
+      width: 80px;
+      height: 30px;
+      font-size: 10px;
       margin-top: 15px;
     }
-  
+   .rgt img{
+     height: 75vh;
+  }
+
+ 
  }
 
-  @media (min-width: 768px)
-  {
-    
-  .lft h2 {
-      font-size:30px; 
-  }
-  .lft h1 {
-    font-size: 25px;
-  }
-  .lft p {
-    margin-top: 10px; 
-    font-size: 14px;
-  }
-  }
+ @media (min-width: 768px) {
  
+  .offer{
+    width: 75%; 
+  }
+   .lft{
+       margin: 17px 0px 0px 20px;
+   }
+  
+   .lft h2 {
+       font-size:35px; 
+   }
+ 
+   .lft h1 {
+     font-size: 25px;
+   }
+ 
+   .lft p {
+     margin-top: 10px; 
+     font-size: 16px;
+   }
+ 
+   .lft button {
+     width: 150px;
+     height: 45px;
+     font-size: 16px;
+     margin-top: 30px;
+   }
+  .rgt img{
+    height: 77vh;
+ }
+
+
+ }
   

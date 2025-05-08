@@ -80,7 +80,6 @@
 .rgt button{
    
     font-weight: 300;
-  
     color:white;
     background: #ff4141;
     border:none;
@@ -96,18 +95,20 @@
 }
 
 
-@media  screen and (min-width:480px) {
+@media  screen and (max-width:480px) {
     .pd{
         flex-direction: column;
+        padding: 50px 0px;
+        
     }
 
     .pd-img-list img{
         width: 60px;
-        height: 80px;
+        height: 73px;
     }
     
     .pd-img  .pd-main-img{
-        height:380px;
+        height:350px;
     }
 
     .pd .rgt{
@@ -138,7 +139,7 @@
     }
     
    .pd-sizes div{
-        padding: 15px 20px;
+        padding: 15px 15px;
         font-size: 12px;
     }
     
@@ -157,29 +158,64 @@
 @media screen and (min-width:768px){
     .pd{
         flex-direction: row;
-       
+        padding: 50px 0px;
     }
 
     .pd-img-list img{
-        width:60px;
-        height: 80px;
+        width:70px;
+        height:85px;
     }
     
     .pd-img  .pd-main-img{
-        height:380px;
+        height:400px;
     }
 
     .pd .rgt{
-         margin:50px 20px ;
-         gap: 17px;
+         margin:15px 20px ;
+         gap: 15px;
      }
+
+     .rgt h1{
+        font-size: 20px; 
+     }
+     
+     .pd-rgt-star img{
+        height:14px;
+     }
+     .pd-rgt-star p{
+        font-size: 12px;
+     }
+     .pd-rgt-prices{
+         font-size: 16px;
+     }
+     .pd-descrpt{
+        font-size: 15px;
+    }
+    .pd-size h1{
+        font-size: 16px;
+     }
+     
+   .pd-sizes div{
+    padding: 15px 15px;
+   
+    font-size: 14px;
+    }
+     .rgt button{
+        padding: 15px 25px;
+        font-size: 10px;
+      
+    }
+  .pd-ctg{
+    font-size: 12px;
+  }
+      
      
      
 }
 
 @media screen and (min-width:1024px){
     .pd{
-        padding: 20px 80px;
+        padding: 50px 80px;
     }
     .pd .lft{
        
@@ -195,7 +231,7 @@
     }
     
     .pd .rgt{
-         margin: 50px 100px ;
+         margin: 20px 100px ;
          gap: 37px;
      }
      

@@ -8,7 +8,7 @@
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 10;
 }
 .nav-logo {
   display: flex;
@@ -22,11 +22,13 @@
 
 .nav-logo p {
   color: #171717;
-
   font-weight: 600;
 }
 .nav-menu {
   list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 .nav-menu li {
   margin-top: 10px;
@@ -49,7 +51,6 @@
   border: 1px solid #7a7a7a;
   border-radius: 25px;
   color: #515151;
-
   font-weight: 500;
   background: white;
   cursor: pointer;
@@ -74,15 +75,13 @@
   position: absolute;
   top: -5px;
   right: -5px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #ff4141;
   color: #fff;
-
-  font-weight: 600;
   border-radius: 50%;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Hamburger Menu*/
@@ -96,7 +95,7 @@
 }
 
 .burger-icon {
-  width: 25px;
+  width: 20px;
   height: 2px;
   background-color: #333;
   border-radius: 2px;
@@ -120,17 +119,15 @@
 
 /* Navigation Menu that Slides In from the Left */
 .nav-menu {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .nav-menu.open {
   position: absolute;
-  top: 0;
+  top: -10px;
   left: 0;
   background-color: #fff;
-  width: 40%;
+  width: 60%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -152,36 +149,40 @@
   border-bottom: 3px solid #ff4141;
 }
 
-@media screen and (min-width: 480px) {
+/* moblie--screen */
+
+@media screen and (max-width: 480px) {
   .nav-menu {
     display: none;
   }
 
   .nav-logo {
-    margin-left: 25px;
+    margin-left: 20px;
   }
   .nav-logo img {
-    height: 39px;
+    height: 30px;
   }
   .nav-logo p {
-    font-size: 18px;
+    font-size: 12px;
+    margin-left: -10px;
   }
 
   .login-button {
-    width: 100px;
-    height: 40px;
-    font-size: 14px;
+    width: 60px;
+    height: 30px;
+    font-size: 10px;
+    margin-right: -20px;
   }
 
   .cart-icon img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
   }
 
   .cart-count {
-    width: 13px;
-    height: 13px;
-    font-size: 10px;
+    width: 12px;
+    height: 12px;
+    font-size: 8px;
   }
 
   .burger-menu {
@@ -224,6 +225,7 @@
   .cart-count {
     width: 14px;
     height: 14px;
+    font-size: 10px;
   }
 
   .burger-menu {

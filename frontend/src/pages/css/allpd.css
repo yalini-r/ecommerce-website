@@ -76,7 +76,7 @@
     margin-top: 15px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
  
     .all-products-page h1 {
         font-size: 26px;
