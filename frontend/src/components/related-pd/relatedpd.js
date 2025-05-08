@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import "./relatedpd.css";
 import Item from "../items/items";
 import { ShopContext } from "../../context/shopContext";
@@ -6,20 +6,12 @@ import { useNavigate } from "react-router-dom";
 
 const RelatedProducts = ({ category }) => {
   const { all_product } = useContext(ShopContext);
-  const [showAll, setShowAll] = useState(false);
   const navigate = useNavigate();
 
-  // Filter products based on the category
-  const relatedProducts = all_product.filter(
-    (item) => item.category === category
-  );
+  const visibleProducts = all_product
+    .filter((item) => item.category === category)
+    .slice(0, 4);
 
-  // Show only first 4 products initially
-  const visibleProducts = showAll
-    ? relatedProducts
-    : relatedProducts.slice(0, 4);
-
-  // Navigate to the correct ShopCategory page
   const handleExploreMore = () => {
     if (category === "men") {
       navigate("/mens");
@@ -49,7 +41,6 @@ const RelatedProducts = ({ category }) => {
         ))}
       </div>
 
-      {/* Explore More Button */}
       <div className="shp-ctg-loadmore" onClick={handleExploreMore}>
         Explore More
       </div>
