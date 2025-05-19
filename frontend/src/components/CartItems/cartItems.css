@@ -1,9 +1,32 @@
 .crt-format {
-  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.crt-format .rs {
+  display: flex;
+  flex-direction: column;
 }
 
 .crt-pd-icon {
   height: 70px;
+}
+
+.rs .title::before {
+  content: "Title: ";
+  color: #333;
+}
+
+.rs .np::before {
+  content: "Price: ";
+  color: #333;
+}
+
+.rs .tp::before {
+  content: "Total: ";
+  color: #333;
 }
 
 .crt-rmv-icon {
@@ -12,6 +35,12 @@
 }
 .crt-quantity {
   margin-left: 10px;
+}
+
+.hrz {
+  margin-top: 20px;
+  height: 1px;
+  background: #afafaf;
 }
 
 .crt-total {
@@ -42,13 +71,9 @@
   }
 
   .crt-format {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
     gap: 20px;
     font-size: 12px;
     font-weight: 400;
-    margin-bottom: 20px;
   }
 
   .crt-format .ls img {
@@ -56,29 +81,13 @@
     height: 150px;
   }
   .crt-format .rs {
-    display: flex;
-    flex-direction: column;
     gap: 10px;
     color: #555;
-  }
-  .rs .title::before {
-    content: "Title: ";
-    color: #333;
   }
 
   .prz {
     display: flex;
     gap: 20px;
-  }
-
-  .rs .np::before {
-    content: "Price: ";
-    color: #333;
-  }
-
-  .rs .tp::before {
-    content: "Total: ";
-    color: #333;
   }
 
   .crt-quantity {
@@ -96,11 +105,6 @@
     width: 10px;
     margin: 0px;
   }
-  .hrz {
-    margin-top: 20px;
-    height: 1px;
-    background: #afafaf;
-  }
 
   .crt-down {
     display: flex;
@@ -113,20 +117,24 @@
   }
 
   .crt-total h1 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .crt-total .crt-total-item {
     padding: 20px 0px;
   }
   .crt-total-item p {
+    font-size: 12px;
+  }
+  .crt-total-item h3 {
     font-size: 14px;
   }
 
   .crt-total button {
-    width: 150px;
-    font-size: 14px;
+    width: 120px;
+    font-size: 12px;
     font-weight: 400;
+    height: 40px;
   }
 }
 
@@ -138,7 +146,8 @@
   .crt-format {
     gap: 25px;
     font-size: 14px;
-    margin-bottom: 30px;
+    font-weight: 200;
+    margin-bottom: 20px;
   }
 
   .crt-format .ls img {
@@ -146,19 +155,23 @@
     height: 180px;
   }
   .crt-format .rs {
-    gap: 20px;
+    gap: 25px;
   }
 
   .prz {
-    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .crt-quantity {
-    margin-top: 15px;
+    margin-left: 0px;
+    margin-top: 10px;
   }
 
   .crt-rmv-icon {
     width: 12px;
+    margin: 0px;
   }
 
   .crt-down {
@@ -205,15 +218,16 @@
   .prz {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px;
   }
 
   .crt-quantity {
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .crt-rmv-icon {
     width: 13px;
+    margin: 0px;
   }
 
   .crt-down {

@@ -83,41 +83,39 @@
   background: #c7c7c7;
 }
 
-
-
 /* mobile--screen */
 
 @media screen and (max-width: 480px) {
   .ft-logo {
-    gap: 20px;
+    gap: 5px;
   }
 
   .ft-logo img {
-    height: 50px;
+    height: 35px;
   }
 
   .ft-logo p {
-    font-size: 18px;
+    font-size: 12px;
   }
 
   .ft-links {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    font-size: 16px;
+    gap: 25px;
+    font-size: 14px;
   }
 
   .ft-social-icons {
-    gap: 35px;
+    gap: 30px;
   }
 
   .ft-icons-container img {
-    height: 20px;
+    height: 15px;
   }
 
   .ft-copyrgt {
-    font-size: 14px;
-    margin-bottom: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
   }
 }
 
@@ -148,8 +146,6 @@
     height: 30px;
   }
 }
-
-
 
 @media screen and (min-width: 1024px) {
   .footer {

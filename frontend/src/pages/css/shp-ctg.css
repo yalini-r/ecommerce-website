@@ -36,31 +36,27 @@
   margin: 40px auto;
 }
 
-
-
 @media screen and (max-width: 480px) {
   .shp-ctg {
     margin: 50px auto;
   }
 
   .shp-ctg-indexsort p {
-    font-size: 13px;
+    font-size: 10px;
   }
 
   .shp-ctg-sort {
     padding: 8px 10px;
-    font-size: 13px;
+    font-size: 10px;
   }
 
   .shp-ctg-sort img {
     width: 8px;
   }
   .shp-ctg-products {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 60px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
-
-  
 }
 
 @media screen and (min-width: 768px) {
@@ -81,10 +77,9 @@
   }
 
   .shp-ctg-products {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 70px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
   }
- 
 }
 
 @media (min-width: 1024px) {
@@ -106,8 +101,6 @@
 
   .shp-ctg-products {
     grid-template-columns: repeat(4, 1fr);
-    gap: 60px;
+    gap: 70px;
   }
-
- 
 }

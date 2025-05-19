@@ -3,8 +3,7 @@
   justify-content: center;
   align-items: center;
   background: #fce3fe;
-  height: 100vh;
-  
+  padding: 100px;
 }
 
 .sg-container {
@@ -27,17 +26,15 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
- 
 }
 
 .input-field {
   display: flex;
   flex-direction: column;
- 
 }
 
 .input-field label {
- font-weight: 500;
+  font-weight: 500;
   color: #5c5c5c;
   margin-bottom: 5px;
 }
@@ -61,7 +58,6 @@
   font-weight: 500;
   cursor: pointer;
   margin-top: 20px;
- 
 }
 
 .sg-container button:hover {
@@ -69,9 +65,8 @@
 }
 
 .login {
-  margin-top: 20px;
+  margin-top: 10px;
   color: #5c5c5c;
- 
 }
 
 .login span {
@@ -84,8 +79,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 20px;
-  gap: 10px;
+  margin-top: 10px;
   color: #5c5c5c;
   font-size: 16px;
 }
@@ -95,19 +89,19 @@
 }
 
 @media screen and (max-width: 480px) {
- 
-
   .sg-container {
-    max-width: 390px;
-    padding: 30px;
+    min-width: 300px;
+    padding: 20px 10px;
+   
   }
 
   .sg-container h1 {
-    font-size: 25px;
+    margin-top: 10px;
+    font-size: 15px;
   }
 
   .sg-fields {
-    width: 95%;
+    width: 80%;
   }
 
   .input-field {
@@ -115,38 +109,37 @@
   }
 
   .input-field label {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .sg-fields input {
-    height: 40px;
-    padding: 0 10px;
-    font-size: 12px;
+    height: 30px;
+    padding: 0 15px;
+    font-size: 10px;
   }
 
   .sg-container button {
-    height: 40px;
-    font-size: 16px;
-    width: 95%;
+    margin: 10px auto;
+    height: 30px;
+    font-size: 10px;
+    width: 60%;
   }
 
   .login {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .agree input {
-    width: 20px;
-    height: 15px;
+    width: 15px;
+    height: 10px;
   }
 
   .agree label {
-    font-size: 14px;
+    font-size: 10px;
   }
 }
 
-
-@media screen and (min-width:768px){
-
+@media screen and (min-width: 768px) {
   .sg-container {
     max-width: 400px;
     padding: 35px;
@@ -157,7 +150,7 @@
   }
 
   .sg-fields {
-    width:98%;
+    width: 98%;
   }
 
   .input-field {
@@ -181,7 +174,11 @@
   }
 
   .login {
+    margin-top: 20px;
     font-size: 15px;
+  }
+  .agree{
+    gap: 10px;
   }
 
   .agree input {
@@ -194,9 +191,7 @@
   }
 }
 
-@media screen and (min-width:1024px){
- 
-
+@media screen and (min-width: 1024px) {
   .sg-container {
     max-width: 420px;
     padding: 40px;
@@ -207,7 +202,7 @@
   }
 
   .sg-fields {
-    width:100%;
+    width: 100%;
   }
 
   .input-field {
@@ -227,7 +222,7 @@
   .sg-container button {
     height: 50px;
     font-size: 18px;
-     width: 100%;
+    width: 100%;
   }
 
   .login {

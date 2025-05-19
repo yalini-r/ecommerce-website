@@ -51,7 +51,6 @@
   background: #ff4141;
   color: white;
   border: none;
-
   cursor: pointer;
   border-radius: 5px;
   transition: 0.3s;
@@ -59,8 +58,6 @@
 
 .contact-details {
   flex: 1;
-
- 
   line-height: 1.5;
 }
 
@@ -96,19 +93,19 @@
   }
 
   .contact-header h1 {
-    font-size: 26px;
+    font-size: 22px;
   }
 
   .contact-header p {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .contact-container {
     flex-direction: column;
     justify-content: center;
     gap: 50px;
-    padding: 50px;
-    margin-left: 25px;
+    padding: 50px 30px;
+   
   }
 
   .contact-form {

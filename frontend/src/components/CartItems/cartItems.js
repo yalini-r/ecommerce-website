@@ -2,10 +2,12 @@ import React, { useContext } from "react";
 import "./cartItems.css";
 import { ShopContext } from "../../context/shopContext";
 import rmv_icon from "../assets/cart_cross_icon.png";
+import { useNavigate } from "react-router-dom";
 
 const CartItems = () => {
   const { getTotalCartAmount, all_product, cartItem, removeCart } =
     useContext(ShopContext);
+  const navigate = useNavigate();
 
   // Ensure cartItem is not undefined, use fallback if necessary
   const safeCartItem = cartItem || {}; // Fallback to empty object if undefined
@@ -75,7 +77,9 @@ const CartItems = () => {
             </div>
           </div>
 
-          <button>Continue</button>
+          <button onClick={() => navigate("/checkout")}>
+            Continue to Checkout
+          </button>
         </div>
       </div>
     </div>

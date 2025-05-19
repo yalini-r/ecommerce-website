@@ -25,7 +25,7 @@
 
 @media screen and (max-width: 480px) {
   .new-cts {
-    padding: 0px 50px;
+    padding: 0px 20px;
   }
   .new-cts h1 {
     font-size: 15px;
@@ -36,8 +36,8 @@
     height: 2px;
   }
   .cts {
-    grid-template-columns: 1fr;
-    gap: 60px;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
   }
 }
 
@@ -46,8 +46,8 @@
     padding: 0px 30px;
   }
   .cts {
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
   }
 
   .new-cts h1 {
@@ -60,9 +60,12 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .new-cts {
+    padding: 0px 50px;
+  }
   .cts {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 30px;
+    gap: 50px;
   }
 
   .new-cts h1 {
