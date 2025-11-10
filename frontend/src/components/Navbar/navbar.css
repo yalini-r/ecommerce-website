@@ -1,4 +1,4 @@
-/* General Navbar Styles */
+/* ========== General Navbar Styles ========== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -8,8 +8,9 @@
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 100;
 }
+
 .nav-logo {
   display: flex;
   align-items: center;
@@ -17,29 +18,41 @@
 }
 
 .nav-logo img {
+  height: 40px;
   object-fit: contain;
 }
 
 .nav-logo p {
   color: #171717;
   font-weight: 600;
+  font-size: 20px;
 }
+
+/* ========== Navigation Menu ========== */
 .nav-menu {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 25px;
+  transition: transform 0.3s ease-in-out;
 }
+
 .nav-menu li {
   margin-top: 10px;
   padding: 0px 10px;
 }
+
 .nav-link {
   text-decoration: none;
   color: #626262;
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
+
+.nav-link:hover {
+  color: #ff4141;
+}
+
 .nav-login-cart {
   display: flex;
   align-items: center;
@@ -56,6 +69,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .login-button:hover {
   background: #ff4141;
   color: #fff;
@@ -63,215 +77,147 @@
   box-shadow: 0 1px 3px -2px rgba(0, 0, 0, 0.1);
 }
 
+/* ========== Cart Icon ========== */
 .cart-icon {
   position: relative;
 }
 
 .cart-icon img {
+  width: 28px;
+  height: 28px;
   cursor: pointer;
 }
 
 .cart-count {
   position: absolute;
-  top: -5px;
-  right: -5px;
+  top: -6px;
+  right: -6px;
   background-color: #ff4141;
   color: #fff;
   border-radius: 50%;
   font-weight: 600;
+  font-size: 10px;
+  width: 16px;
+  height: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Hamburger Menu*/
+/* ========== Mobile Menu ========== */
 .burger-menu {
   display: none;
-  position: absolute;
-  left: 16px;
-  top: 25px;
-  z-index: 10;
   cursor: pointer;
+  color: #333;
+  font-size: 24px;
+  z-index: 120;
 }
 
-.burger-icon {
-  width: 20px;
-  height: 2px;
-  background-color: #333;
-  border-radius: 2px;
-  margin: 4px 0px;
-  transition: all 0.3s ease;
-}
-
-.burger-menu.active .burger-icon:nth-child(1) {
-  transform: translateY(10px) rotate(45deg);
-  width: 18px;
-}
-
-.burger-menu.active .burger-icon:nth-child(2) {
-  opacity: 0;
-}
-
-.burger-menu.active .burger-icon:nth-child(3) {
-  transform: translateY(-10px) rotate(-45deg);
-  width: 18px;
-}
-
-/* Navigation Menu that Slides In from the Left */
-.nav-menu {
-  transition: transform 0.3s ease-in-out;
-}
-
-.nav-menu.open {
+/* Close icon inside menu */
+.close-icon {
+  display: none;
   position: absolute;
-  top: -10px;
-  left: 0;
-  background-color: #fff;
-  width: 60%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 80px;
-  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.2);
-  transform: translateX(0);
-  transition: transform 0.3s ease-in-out;
+  top: 25px;
+  right: 25px;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  z-index: 130;
 }
 
-.nav-menu li {
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.nav-menu li:hover {
-  border-bottom: 3px solid #ff4141;
-}
-
-/* moblie--screen */
-
-@media screen and (max-width: 480px) {
-  .nav-menu {
-    display: none;
-  }
-
-  .nav-logo {
-    margin-left: 20px;
-  }
-  .nav-logo img {
-    height: 30px;
-  }
-  .nav-logo p {
-    font-size: 12px;
-    margin-left: -10px;
-  }
-
-  .login-button {
-    width: 60px;
-    height: 30px;
-    font-size: 10px;
-    margin-right: -20px;
-  }
-
-  .cart-icon img {
-    width: 20px;
-    height: 20px;
-  }
-
-  .cart-count {
-    width: 12px;
-    height: 12px;
-    font-size: 8px;
-  }
-
+/* Slide-in menu for mobile */
+@media screen and (max-width: 768px) {
   .burger-menu {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .nav-logo {
-    margin-left: 0px;
-  }
-  .nav-logo img {
-    height: 39px;
-  }
-  .nav-logo p {
-    font-size: 18px;
+    display: block;
+    position: absolute;
+    left: 20px;
   }
 
   .nav-menu {
-    display: flex;
-    gap: 30px;
-    margin-top: 10px;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: #fff;
+    width: 70%;
+    height: 100vh;
+    padding-top: 80px;
+    box-shadow: 3px 0 6px rgba(0, 0, 0, 0.2);
+    transform: translateX(0);
+    transition: left 0.3s ease-in-out;
+  }
+
+  .nav-menu.open {
+    left: 0;
   }
 
   .nav-menu li {
-    font-size: 16px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
   }
+
+  .close-icon {
+    display: block;
+  }
+
+  .nav-login-cart {
+    gap: 15px;
+  }
+
   .login-button {
-    width: 110px;
-    height: 42px;
-    font-size: 15px;
-  }
-
-  .cart-icon img {
-    width: 27px;
-    height: 27px;
-  }
-
-  .cart-count {
-    width: 14px;
-    height: 14px;
-    font-size: 10px;
-  }
-
-  .burger-menu {
-    display: none;
+    width: 80px;
+    height: 35px;
+    font-size: 12px;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .nav-logo {
-    gap: 10px;
+/* ========== Tablet and Desktop Adjustments ========== */
+@media screen and (min-width: 769px) {
+  .nav-menu {
+    display: flex;
+    position: static;
+    background: none;
+    height: auto;
+    width: auto;
+    box-shadow: none;
   }
 
+  .burger-menu,
+  .close-icon {
+    display: none !important;
+  }
+}
+
+/* ========== Large Screens ========== */
+@media screen and (min-width: 1024px) {
   .nav-logo img {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
   }
 
   .nav-logo p {
     font-size: 24px;
   }
 
-  .nav-menu {
-    display: flex;
-    gap: 40px;
-    margin-top: 10px;
-  }
-
   .nav-menu li {
-    font-size: 20px;
-  }
-  .login-button {
-    width: 120px;
-    height: 50px;
     font-size: 18px;
   }
+
+  .login-button {
+    width: 120px;
+    height: 45px;
+    font-size: 16px;
+  }
+
   .cart-icon img {
     width: 30px;
     height: 30px;
   }
+
   .cart-count {
     width: 18px;
     height: 18px;
     font-size: 12px;
-  }
-
-  .burger-menu {
-    display: none;
   }
 }

@@ -1,40 +1,52 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import "./navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import logo from "../assets/logo.png";
 import cart_icon from "../assets/cart_icon.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark, faBars } from "@fortawesome/free-solid-svg-icons"; // 🆕 Added hamburger icon
 import { ShopContext } from "../../context/shopContext";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle menu visibility
-  const [isActive, setIsActive] = useState(false); // State to toggle hamburger icon transformation
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isActive, setIsActive] = useState(false);
+  const { getTotalCartItems } = useContext(ShopContext);
+  const location = useLocation();
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); // Toggle the menu open/close state
-    setIsActive(!isActive); // Toggle the hamburger icon transformation
+    setIsMenuOpen(!isMenuOpen);
+    setIsActive(!isActive);
   };
 
-  const { getTotalCartItems } = useContext(ShopContext);
+  // 🧠 Automatically close menu when navigating
+  useEffect(() => {
+    setIsMenuOpen(false);
+    setIsActive(false);
+  }, [location]);
 
   return (
     <div className="navbar">
+      {/* Logo */}
       <div className="nav-logo">
         <img src={logo} alt="Logo" />
         <p>SHOPPER</p>
       </div>
 
-      {/* Hamburger Menu Icon for mobile */}
-      <div
-        className={`burger-menu ${isActive ? "active" : ""}`}
-        onClick={toggleMenu}>
-        <div className="burger-icon"></div>
-        <div className="burger-icon"></div>
-        <div className="burger-icon"></div>
+      {/* Hamburger Icon (only visible on mobile) */}
+      <div className="burger-menu" onClick={toggleMenu}>
+        <FontAwesomeIcon icon={faBars} className="burger-icon-fa" />
       </div>
 
-      {/* Navigation Menu (this will slide in from left) */}
+      {/* Navigation Menu (slides in from left on mobile) */}
       <ul className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
+        {/* Font Awesome Close Icon */}
+        <FontAwesomeIcon
+          icon={faXmark}
+          className="close-icon"
+          onClick={toggleMenu}
+        />
+
         <li>
           <Link className="nav-link" to="/" onClick={toggleMenu}>
             Shop
@@ -57,6 +69,7 @@ const Navbar = () => {
         </li>
       </ul>
 
+      {/* Login + Cart Section */}
       <div className="nav-login-cart">
         <Link to="/login">
           <button className="login-button">Login</button>
