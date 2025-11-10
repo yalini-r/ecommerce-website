@@ -19,7 +19,7 @@ const Navbar = () => {
     setIsActive(!isActive);
   };
 
-  // 🧠 Automatically close menu when navigating
+  // Automatically close menu when navigating
   useEffect(() => {
     setIsMenuOpen(false);
     setIsActive(false);

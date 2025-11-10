@@ -5,7 +5,8 @@ import Shop from "./pages/shop";
 import ShopCategory from "./pages/shopcategory";
 import Product from "./pages/product";
 import Cart from "./pages/cart";
-import Login from "./pages/signup";
+import Signup from "./pages/signup";
+import Login from "./pages/login";
 import Footer from "./components/footer/footer";
 import men_bnr from "./components/assets/banner_mens.png";
 import women_bnr from "./components/assets/banner_women.png";
@@ -36,6 +37,7 @@ function App() {
             element={<ShopCategory bnr={kids_bnr} category="kid" />}
           />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<AllProducts />} />

@@ -43,7 +43,7 @@
   border: 1px solid #c9c9c9;
   outline: none;
   color: #5c5c5c;
-  border-radius: 4px;
+ 
 }
 
 .sg-fields input:focus {
@@ -88,11 +88,60 @@
   font-weight: 400;
 }
 
+.icon-field .input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #c9c9c9;
+  border-radius: 20px;
+  padding: 0px 10px;
+  background: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.icon-field .input-wrapper:focus-within {
+  border-color: #ff4141;
+}
+
+.icon-field .input-icon {
+  color: #888;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.icon-field input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #333;
+  background: transparent;
+}
+
+.sg-fields {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-field {
+  width: 100%;
+}
+
+.link-text {
+  color: #ff4141;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link-text:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 480px) {
   .sg-container {
     min-width: 300px;
     padding: 20px 10px;
-   
   }
 
   .sg-container h1 {
@@ -177,7 +226,7 @@
     margin-top: 20px;
     font-size: 15px;
   }
-  .agree{
+  .agree {
     gap: 10px;
   }
 
