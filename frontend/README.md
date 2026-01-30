@@ -35,7 +35,8 @@ Check out the live website here: [E-Commerce Website](https://snap-buy-shop.netl
 ## Screenshots
 
 ### Home & Categories
-![Home Page](scrnshots/home.png)
+![Profile](frontend/src/scrnshots/profile.png)
+
 
 ---
 
