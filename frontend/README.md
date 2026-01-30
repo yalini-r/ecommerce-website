@@ -27,18 +27,15 @@ This project focuses on frontend development using React and does not include ba
 
 ---
 
+## Live Demo
+Check out the live website here: [E-Commerce Website](https://snap-buy-shop.netlify.app/)
+
+---
+
 ## Screenshots
 
 ### Home & Categories
 ![Home Page](scrnshots/home.png)
-![Men Category](scrnshots/men.png)
-![Women Category](scrnshots/women.png)
-![Kids Category](scrnshots/kids.png)
-
-### Cart
-![Cart Page](scrnshots/cart.png)
-
-> 📌 Make sure screenshot paths match your folder structure.
 
 ---
 
