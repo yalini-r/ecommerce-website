@@ -40,7 +40,7 @@ Check out the live website here: [E-Commerce Website](https://snap-buy-shop.netl
 
 ### Home
 
-![Profile](frontend/src/scrnshots/profile.png)
+![Home Page](frontend/src/scrnshots/home.png)
 
 ---
 
